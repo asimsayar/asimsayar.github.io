@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Courgette&family=Josefin+Sans:ital,wght@1,100&family=Radio+Canada&family=Skranji&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Cormorant+Garamond:ital@1&family=Courgette&family=Great+Vibes&family=Josefin+Sans:ital,wght@1,100&family=Radio+Canada&family=Skranji&family=Teko&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.btn {
+    background-color: rgb(69, 65, 65);
+    color: white;
+    border-radius: 13px;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(96, 92, 92);
+}
+
+footer a,
+footer p {
+    color: white; 
+}
+
+footer a {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+.header {
+    background-image: url(background-image/a_sayar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo {
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-bottom: 5px solid #000;
+    border-radius: 40px;
+    padding-bottom: 5px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 27px;
+}
+
+a {
+    color: rgb(75, 3, 3);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-letter {
+    font-size: 8rem;
+    font-family: 'Teko', sans-serif;
+    color: rgb(75, 3, 3);
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 35px;
+    font-size: 2.5rem;
+    line-height: 0.4;
+    letter-spacing: 1px;
+}
+
+.btn-araba,
+.btn-mercedes,
+.btn-audi,
+.btn-bmw,
+.btn-keşfet {
+    display: block;
+    background-color: rgb(69, 65, 65);
+    color: rgb(75, 3, 3);
+    padding: 10px 15px;
+    border-radius: 13px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.btn-araba::after,
+.btn-mercedes::after,
+.btn-audi::after,
+.btn-bmw::after,
+.btn-keşfet::after {
+    content: "KEŞFET";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    font-size: 20px;
+}
+
+.btn-araba:hover::after,
+.btn-mercedes:hover::after,
+.btn-audi:hover::after,
+.btn-bmw:hover::after,
+.btn-keşfet:hover::after {
+    color: #fff;
+    top: 0;
+    font-size: 20px;
+}
+
+#resim {
+    width: 601px;
+}
+
+.about {
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 40px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(75, 3, 3);
+    font-size: 35px;
+    font-weight: 400px;
+}
+
+.about-title h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+    margin-top: 8px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text {
+    width: 40%;
+}
+
+#resim1,
+#resim2,
+#resim3,
+#resim4,
+#resim5,
+#resim6,
+#resim7,
+#resim8,
+#resim9,
+#resim10,
+#resim11,
+#resim12,
+#resim13,
+#resim14,
+#resim15,
+#resim16,
+#resim17,
+#resim18,
+#resim19,
+#resim20 {
+    width: 100%;
+    height: auto;
+    max-width: 601px;
+    display: block;
+    margin: 0 auto;
+}
+
+#video {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(23, 15, 47);
+}
+
+#son {
+    font-family: 'Great Vibes', cursive;
+    color: rgb(57, 59, 54);
+    text-align: center;
+}
+
+#links {
+    color: blue;
+}
+
+#link1s {
+    color: darkred;
+}
+
+#link2s {
+    color: rgb(9, 78, 9);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-list li {
+    margin-bottom: 10px;
+}
+
+.social-media-list li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-media-list li a i {
+    margin-right: 8px;
+}
+
+.social-media-list li:nth-child(1) a {
+    background-color: #1877F2; 
+}
+
+.social-media-list li:nth-child(1) a:hover {
+    background-color: #1664c5; 
+}
+
+.social-media-list li:nth-child(2) a {
+    background-color: #1DA1F2; 
+}
+
+.social-media-list li:nth-child(2) a:hover {
+    background-color: #0d86bc; 
+}
+
+.social-media-list li:nth-child(3) a {
+    background-color: #C13584; 
+}
+
+.social-media-list li:nth-child(3) a:hover {
+    background-color: #ad2e73; 
+}
+
+.social-media-list li:nth-child(4) a {
+    background-color: #2867B2;
+}
+
+.social-media-list li:nth-child(4) a:hover {
+    background-color: #215d94; 
+}
+
+.social-media-list li:nth-child(5) a {
+    background-color: #FF0000; 
+}
+
+.social-media-list li:nth-child(5) a:hover {
+    background-color: #cc0000; 
+}
+
+footer a:nth-child(-n+3) {
+    color: white; 
+    font-size: 20px;
+    margin: 0 10px; 
+    background-color: black; 
+    padding: 10px 20px;
+    border-radius: 10px; 
+}
+
+footer a:nth-child(-n+3):hover {
+    background-color: gray; 
+    color: black;
+}
+

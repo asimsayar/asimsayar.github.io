@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosyal Medya Sayfası</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sosyal Medya</h1>
+        <ul class="social-media-list">
+            <li><a href="https://www.facebook.com/" class="social-media-link" data-type="facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.twitter.com/" class="social-media-link" data-type="twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.instagram.com/" class="social-media-link" data-type="instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/" class="social-media-link" data-type="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/" class="social-media-link" data-type="youtube"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+        <div id="socialMediaContent"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.social-media-link').click(function(e){
+                e.preventDefault(); 
+                var dataType = $(this).data('type');
+                loadSocialMediaContent(dataType);
+            });
+        });
+        function loadSocialMediaContent(type) {
+            var content = '';
+            switch(type) {
+                case 'facebook':
+                    window.location.href = 'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/BaykarTech/&ved=2ahUKEwikqruhtIqGAxV2VPEDHaCPDy8QFnoECB0QAQ&usg=AOvVaw03a9FXGLNuLkEgmfNcIQnU';
+                    break;
+                case 'twitter':
+                    window.location.href = 'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/BaykarTech%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&ved=2ahUKEwj-jsO5tIqGAxUPVfEDHQw6B4UQ6F56BAgYEAE&usg=AOvVaw0jHky2rhW3nWM20SxAFPK-';
+                    break;
+                case 'instagram':
+                    window.location.href = 'https://www.instagram.com/yildizlarhavaciliktoplulugu/';
+                    break;
+                case 'linkedin':
+                    window.location.href = 'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tr.linkedin.com/in/as%25C4%25B1m-sayar-809b48278&ved=2ahUKEwjBgaLPuIqGAxXhVPEDHRACBHgQFnoECBUQAQ&usg=AOvVaw1eDFAsKTz1yGh9CpXp-bkF';
+                    break;
+                case 'youtube':
+                    window.location.href = 'https://youtu.be/wK2OitUCLOs?si=NOogDXWZLwr5LZn-';
+                    break;
+                default:
+                    content = '<p>Böyle bir sosyal medya yok.</p>';
+            }
+            $('#socialMediaContent').html(content);
+        }
+    </script>
+</body>
+</html>
